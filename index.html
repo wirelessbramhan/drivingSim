@@ -9,8 +9,8 @@
   </head>
   <body>
 
-  <div id="unity-container" style="position: fixed; width: 100%; height: 100%">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 100%; height: 100%"></canvas>
+  <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
+    <canvas id="unity-canvas" width=1280 height=720 style="width: 100%; height: 100%"></canvas>
   </div>
   
       <div id="unity-loading-bar">
@@ -97,8 +97,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1280px";
-        canvas.style.height = "720px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
