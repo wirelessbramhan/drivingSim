@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | D-Tails</title>
+    <title>Unity WebGL Player | carToon</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">D-Tails</div>
+        <div id="unity-build-title">carToon</div>
       </div>
     </div>
     <script>
@@ -64,8 +64,8 @@
         codeUrl: buildUrl + "/temp.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "IdleMind",
-        productName: "D-Tails",
-        productVersion: "0.1",
+        productName: "carToon",
+        productVersion: "0.0.2",
         showBanner: unityShowBanner,
       };
 
@@ -98,6 +98,7 @@
         canvas.style.height = "540px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/temp.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
